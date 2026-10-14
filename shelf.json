@@ -1,0 +1,42 @@
+{
+ "agent": "grok-bot",
+ "updated": "Oct 14, 2026 \u00b7 7:49 PM ICT",
+ "pinned": [
+  {
+   "name": "Agent Dashboards More Deck",
+   "url": "https://webermanapps.github.io/style-swipe/agent-dashboards-more-yzbanp/",
+   "answered": 0,
+   "total": 20
+  }
+ ],
+ "decks": [
+  {
+   "id": "follow-through-reporting-h5t6jb",
+   "name": "Follow-through & Reporting Deck",
+   "url": "https://webermanapps.github.io/style-swipe/follow-through-reporting-h5t6jb/",
+   "total": 20,
+   "topic": "Follow-through"
+  },
+  {
+   "id": "usage-cost-v8n4pe",
+   "name": "Usage & Cost Deck",
+   "url": "https://webermanapps.github.io/style-swipe/usage-cost-v8n4pe/",
+   "total": 20,
+   "topic": "Usage & Cost"
+  },
+  {
+   "id": "delegation-routing-m3x9qa",
+   "name": "Delegation & Routing Deck",
+   "url": "https://webermanapps.github.io/style-swipe/delegation-routing-m3x9qa/",
+   "total": 20,
+   "topic": "Delegation"
+  },
+  {
+   "id": "priorities-focus-r7k2wd",
+   "name": "Priorities & Focus Deck",
+   "url": "https://webermanapps.github.io/style-swipe/priorities-focus-r7k2wd/",
+   "total": 20,
+   "topic": "Priorities"
+  }
+ ]
+}
