@@ -1,6 +1,6 @@
 {
  "agent": "grok-bot",
- "updated": "Oct 14, 2026 \u00b7 8:08 PM ICT",
+ "updated": "Oct 14, 2026 \u00b7 8:10 PM ICT",
  "pinned": [
   {
    "name": "Agent Dashboards More Deck",
@@ -10,6 +10,13 @@
   }
  ],
  "decks": [
+  {
+   "id": "questions-center-two-x0uz20",
+   "name": "Questions Center Deck Two",
+   "url": "https://webermanapps.github.io/style-swipe/questions-center-two-x0uz20/",
+   "total": 20,
+   "topic": "Questions Center"
+  },
   {
    "id": "follow-through-reporting-h5t6jb",
    "name": "Follow-through & Reporting Deck",
@@ -30,13 +37,6 @@
    "url": "https://webermanapps.github.io/style-swipe/delegation-routing-m3x9qa/",
    "total": 20,
    "topic": "Delegation"
-  },
-  {
-   "id": "priorities-focus-r7k2wd",
-   "name": "Priorities & Focus Deck",
-   "url": "https://webermanapps.github.io/style-swipe/priorities-focus-r7k2wd/",
-   "total": 20,
-   "topic": "Priorities"
   }
  ]
 }
