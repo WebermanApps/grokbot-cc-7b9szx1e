@@ -1,0 +1,39 @@
+{
+ "routines": [
+  {
+   "name": "Morning Report",
+   "group": "Reports",
+   "schedule_plain": "Daily By 5:00 AM ICT",
+   "status": "on",
+   "last_run": "Today"
+  },
+  {
+   "name": "Evening Report",
+   "group": "Reports",
+   "schedule_plain": "Daily From 6:00 PM ICT",
+   "status": "on",
+   "last_run": "Today 18:11 ICT"
+  },
+  {
+   "name": "Morning Brief",
+   "group": "Daily",
+   "schedule_plain": "Daily At 7:18 AM ICT",
+   "status": "on",
+   "last_run": "Today"
+  },
+  {
+   "name": "Weekly Decision Deck",
+   "group": "Weekly",
+   "schedule_plain": "Mondays At 7:18 AM ICT",
+   "status": "on",
+   "last_run": "Not Yet"
+  },
+  {
+   "name": "Deck Results Router",
+   "group": "Event/Listener",
+   "schedule_plain": "When A Deck Is Submitted",
+   "status": "on",
+   "last_run": "Today"
+  }
+ ]
+}
