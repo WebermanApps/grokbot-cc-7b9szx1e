@@ -10,9 +10,9 @@
   {
    "name": "Evening Report",
    "group": "Reports",
-   "schedule_plain": "Daily From 6:00 PM ICT",
-   "status": "on",
-   "last_run": "Today 18:11 ICT"
+   "schedule_plain": "Retired (was daily from 6:00 PM ICT)",
+   "status": "paused",
+   "last_run": "Oct 14 18:11 ICT"
   },
   {
    "name": "Morning Brief",

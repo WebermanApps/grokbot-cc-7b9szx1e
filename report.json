@@ -1,9 +1,9 @@
 {
  "agent": "Grok Bot",
- "type": "Evening Report",
- "report_type": "Evening Report",
+ "type": "Morning Report",
+ "report_type": "Morning Report",
  "date": "Wed, Oct 14, 2026",
- "posted_at": "2026-10-14T18:11:00+07:00",
- "due": "2026-10-14T18:00:00+07:00",
+ "posted_at": "2026-10-14T04:54:16+07:00",
+ "due": "2026-10-14T05:00:00+07:00",
  "late": false
 }
