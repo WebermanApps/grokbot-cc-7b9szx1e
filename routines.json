@@ -22,9 +22,16 @@
    "last_run": "Today"
   },
   {
-   "name": "Results Router",
+   "name": "Weekly Decision Deck",
+   "group": "Weekly",
+   "schedule_plain": "Mondays At 7:18 AM ICT",
+   "status": "on",
+   "last_run": "Not Yet"
+  },
+  {
+   "name": "Deck Results Router",
    "group": "Event/Listener",
-   "schedule_plain": "When Max Submits Answers",
+   "schedule_plain": "When A Deck Is Submitted",
    "status": "on",
    "last_run": "Today"
   }
