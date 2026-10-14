@@ -1,0 +1,21 @@
+{
+ "name": "Grok Bot",
+ "short_name": "Grok Bot",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#FBF7EE",
+ "theme_color": "#FBF7EE",
+ "icons": [
+  {
+   "src": "apple-touch-icon.png",
+   "sizes": "180x180",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  }
+ ]
+}
