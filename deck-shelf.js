@@ -30,12 +30,12 @@ function doneToday(J){const d=today();let n=(J.done||[]).filter(x=>String(x.at||
    Shape: {updated, agents:{<agent>:{total:N, days:{"YYYY-MM-DD":N}}}} (also accepts {<agent>:{"YYYY-MM-DD":N}}). Missing/unknown -> hidden. */
 const STATS='https://webermanapps.github.io/style-swipe/kit/swipe-stats.json';
 function statsFor(S,agent){if(!S||!agent)return null;const a=(S.agents||S)[agent];if(!a||typeof a!=='object')return null;
- const days=a.days||Object.fromEntries(Object.entries(a).filter(([k,v])=>/^\d{4}-\d{2}-\d{2}$/.test(k)&&typeof v==='number'));
+ const days=a.days||a.daily||Object.fromEntries(Object.entries(a).filter(([k,v])=>/^\d{4}-\d{2}-\d{2}$/.test(k)&&typeof v==='number'));
  const tz=S.tz||'Asia/Bangkok';let d;try{d=new Date().toLocaleDateString('en-CA',{timeZone:tz})}catch(_){d=today()}
- const total=typeof a.total==='number'?a.total:Object.values(days).reduce((x,y)=>x+(+y||0),0);
+ const total=typeof a.total==='number'?a.total:typeof a.all_time==='number'?a.all_time:Object.values(days).reduce((x,y)=>x+(+y||0),0);
  return {today:+(days[d]||0),total}}
 function paintStats(box,J){const st=box.querySelector('.ds-stats');if(!st)return;
- fetch(STATS+'?'+Date.now()).then(r=>r.ok?r.json():null).then(S=>{const v=statsFor(S,J.agent);if(!v)return;
+ fetch((box.dataset.stats||J.stats_url||STATS)+'?'+Date.now()).then(r=>r.ok?r.json():null).then(S=>{const v=statsFor(S,J.agent);if(!v)return;
   st.textContent='';const f=(n,l)=>{const s=el('span','ds-stat');s.append(el('b','',n.toLocaleString('en-US')),el('span','',l));return s};
   st.append(f(v.today,'swipes today'),f(v.total,'all-time'));st.hidden=false}).catch(()=>{})}
 function render(box,J,o){o=o||{};J=J||{};const all=order(norm(J,o)),cap=(o.nocap||box.hasAttribute('data-shelf-nocap'))?all.length:CAP,decks=all.slice(0,cap);
