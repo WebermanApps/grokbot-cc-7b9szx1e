@@ -1,0 +1,158 @@
+/* dash-theme version cc6 (Oct 15 2026: section separation .mw-section/.mw-sections; cc4 Advisor Boards kit, footer). Link as kit/dash-theme.css?v=cc6 */
+/* Apps Home color scheme for agent dashboards (Max rule, Oct 15 2026 12:28 ICT).
+   Source: ops/apps-home/gen.py + ops/brand/brand-tokens.css. Colors only, light only.
+   Exempt: WellNest, UpKeep. Not for deck pages. */
+:root{
+  color-scheme: light only;
+  --dash-bg:#ffffff;          /* page background (Apps Home html/body) */
+  --dash-card:#ffffff;        /* cards / panels */
+  --dash-beige:#FAF6EE;       /* light beige accent (Apps Home Grok Bot card, theme-color) */
+  --dash-beige-border:#e3ddd2;/* beige border (Apps Home Deck Building link) */
+  --dash-border:#e5e5e5;      /* hairlines / card borders (--mw-border) */
+  --dash-text:#0a0a0a;        /* body text (--mw-foreground) */
+  --dash-muted:#737373;       /* secondary text (--mw-muted-text) */
+  --dash-primary:#171717;     /* buttons, strong borders (--mw-primary) */
+  --dash-primary-fg:#fafafa;  /* text on primary */
+  --dash-secondary:#f5f5f5;   /* hover / muted surface */
+}
+html,body{background:var(--dash-bg)!important;color:var(--dash-text)}
+.card{background-color:var(--dash-card);border-color:var(--dash-border)}
+.section-accent{background-color:var(--dash-beige);border-color:var(--dash-beige-border)}
+/* sections stay transparent on the white page; opt-in beige band via .section-accent */
+
+/* Numbered item block (.mw-item) - shared by Coach, Research and others.
+   Markup: <ol class="mw-items"><li class="mw-item"><span class="mw-num">01</span><div class="mw-body"><h3>Title</h3><p>Text</p></div></li></ol>
+   White fill, 1px beige outline, square corners, 2-digit uppercase badge. Add .mw-item--accent for a beige fill. */
+.mw-items{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.mw-item{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;background:#fff;border:1px solid #e3ddd2;border-radius:0}
+.mw-item--accent{background:#FAF6EE}
+.mw-num{flex:none;min-width:36px;height:28px;display:inline-flex;align-items:center;justify-content:center;padding:0 6px;border:1px solid #171717;font:600 12px/1 var(--mw-font-body,'Hind',sans-serif);letter-spacing:.1em;text-transform:uppercase;color:#171717;background:#fff}
+.mw-body{flex:1;min-width:0}
+.mw-body h3{margin:0 0 4px;font:600 18px/1.25 var(--mw-font-heading,'Khand',sans-serif);color:#0a0a0a}
+.mw-body p{margin:0;font-size:15px;line-height:1.5;color:#404040}
+@media(max-width:480px){.mw-item{padding:14px;gap:12px}.mw-body h3{font-size:17px}}
+@media(max-width:600px){.mw-item{flex-direction:column;gap:8px;width:100%;box-sizing:border-box}.mw-body{width:100%}}
+
+/* Command Center header (.mw-cc-header) - Max rule Oct 15 2026 13:15 ICT. One per agent dashboard, replaces the old top title.
+   Markup: <header class="mw-cc-header"><div class="mw-cc-logo">(svg/img)</div><div class="mw-cc-text"><h1 class="mw-cc-title">Legal Command Center</h1><p class="mw-cc-desc">One-line description</p></div></header>
+   Or: <header class="mw-cc-header" data-cc-name="Legal" data-cc-desc="..." data-cc-logo="logo.svg"></header> + kit/cc-header.js.
+   WellNest/UpKeep: same structure, override --cc-font-head/--cc-font-body/--cc-text/--cc-muted/--cc-border with brand values. */
+.mw-cc-header{display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;align-items:center;gap:18px;width:100%;padding:16px 0 18px;margin:0 0 24px;border:0;border-bottom:2px solid var(--cc-rule,#171717)!important;border-radius:0;background:transparent;max-width:100%;box-sizing:border-box;min-width:0;text-align:left}
+.mw-cc-header .mw-cc-logo{flex:0 0 72px;width:72px;height:72px;display:flex;align-items:center;justify-content:center;border-radius:0;overflow:hidden;margin:0;padding:0;background:none;border:0}
+.mw-cc-header .mw-cc-logo svg,.mw-cc-header .mw-cc-logo img,.mw-cc-header .mw-cc-logo>span{width:72px!important;height:72px!important;display:flex;align-items:center;justify-content:center;border-radius:0;max-width:none}
+.mw-cc-header .mw-cc-logo>span svg{width:60%!important;height:60%!important}
+.mw-cc-header .mw-cc-text{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;justify-content:center}
+.mw-cc-header .mw-cc-title{margin:0;padding:0;font:600 34px/1.05 var(--cc-font-head,'Khand',sans-serif);letter-spacing:.01em;text-transform:none;color:var(--cc-text,#0a0a0a);overflow-wrap:anywhere;border:0}
+.mw-cc-header .mw-cc-desc{margin:4px 0 0;padding:0;font:400 15px/1.4 var(--cc-font-body,'Hind',sans-serif);color:var(--cc-muted,#737373);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:none}
+@media(max-width:600px){.mw-cc-header{gap:12px;padding:12px 0 14px;margin-bottom:20px}.mw-cc-header .mw-cc-logo{flex-basis:56px;width:56px;height:56px}.mw-cc-header .mw-cc-logo svg,.mw-cc-header .mw-cc-logo img,.mw-cc-header .mw-cc-logo>span{width:56px!important;height:56px!important}.mw-cc-header .mw-cc-logo>span svg{width:60%!important;height:60%!important}.mw-cc-header .mw-cc-title{font-size:24px}.mw-cc-header .mw-cc-desc{font-size:14px;white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}}
+
+/* Plain block: .mw-item without .mw-num (or .mw-block) - outlined, no number. */
+.mw-block{padding:16px 18px;background:#fff;border:1px solid #e3ddd2;border-radius:0}
+.mw-block--accent{background:#FAF6EE}
+
+/* Numbered topic carousel (.mw-carousel) - ONLY for open research topics.
+   <div class="mw-carousel"><div class="mw-track"><article class="mw-slide"><span class="mw-num">01</span><h3>Topic</h3><p>One-line summary</p></article>...</div>
+   <div class="mw-car-nav"><button class="mw-prev" aria-label="Previous">&#8592;</button><button class="mw-next" aria-label="Next">&#8594;</button></div></div>
+   Scroll-snap swipe on phone; arrows scroll one card (tiny inline JS: track.scrollBy({left:±track.clientWidth*0.85,behavior:'smooth'})). */
+.mw-carousel{position:relative}
+.mw-track{display:grid;grid-auto-flow:column;grid-auto-columns:85%;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;scrollbar-width:thin}
+.mw-slide{scroll-snap-align:start;display:flex;flex-direction:column;gap:8px;min-height:160px;padding:18px;background:#fff;border:1px solid #e3ddd2;border-radius:0}
+.mw-slide h3{margin:0;font:600 20px/1.2 var(--mw-font-heading,'Khand',sans-serif);color:#0a0a0a}
+.mw-slide p{margin:0;font-size:15px;line-height:1.5;color:#404040}
+.mw-slide .mw-num{align-self:flex-start}
+.mw-car-nav{display:flex;justify-content:flex-end;gap:8px;margin-top:8px}
+.mw-car-nav button{min-width:44px;min-height:44px;border:2px solid #171717;background:#fff;color:#171717;font-size:18px;border-radius:0;cursor:pointer}
+@media(min-width:700px){.mw-track{grid-auto-columns:calc((100% - 24px)/3)}}
+
+/* ===== Advisor Boards Deck kit (Max picks Oct 15 2026 13:52 ICT, v cc4). White + beige, square corners, Khand/Hind, light only. ===== */
+/* Thumbnail card (.mw-thumb-card) - shared by Research, Coach, Legal, Security. Wide 16:9 thumbnail, caption UNDER on white
+   (never a dark strip over the picture), tap expands details IN PLACE (tap again to close; no separate page).
+   <article class="mw-thumb-card" tabindex="0" aria-expanded="false"><div class="mw-thumb"><img alt=""></div>
+     <div class="mw-thumb-cap"><h3>Title</h3><p class="mw-thumb-sub">One line</p></div><div class="mw-thumb-more">Details...</div></article>
+   JS: card.onclick=()=>card.setAttribute('aria-expanded',card.getAttribute('aria-expanded')!=='true'). */
+.mw-thumb-card{display:flex;flex-direction:column;background:#fff;border:1px solid #e3ddd2;border-radius:0;overflow:hidden;cursor:pointer;min-width:0}
+.mw-thumb-card:focus-visible{outline:2px solid #171717;outline-offset:2px}
+.mw-thumb{position:relative;aspect-ratio:16/9;background:#FAF6EE;border-bottom:1px solid #e3ddd2;overflow:hidden}
+.mw-thumb img,.mw-thumb svg{width:100%;height:100%;object-fit:cover;display:block}
+.mw-thumb--icon{display:flex;align-items:center;justify-content:center}
+.mw-thumb--icon svg{width:44%;height:auto}
+.mw-thumb-cap{padding:10px 12px 12px}
+.mw-thumb-cap h3{margin:0;font:600 17px/1.2 var(--mw-font-heading,'Khand',sans-serif);color:#0a0a0a}
+.mw-thumb-sub{margin:2px 0 0;font:400 14px/1.4 var(--mw-font-body,'Hind',sans-serif);color:#737373}
+.mw-thumb-more{display:none;padding:0 12px 12px;font:400 15px/1.5 var(--mw-font-body,'Hind',sans-serif);color:#404040;border-top:1px solid #e3ddd2;padding-top:10px}
+.mw-thumb-card[aria-expanded="true"] .mw-thumb-more{display:block}
+.mw-thumb-card[aria-expanded="true"]{background:#FAF6EE}
+/* Light translucent caption strip - ONLY if a caption must sit on a picture (never dark). */
+.mw-thumb-strip{position:absolute;left:0;right:0;bottom:0;padding:6px 10px;background:rgba(255,255,255,.82);color:#0a0a0a;font:600 15px/1.2 var(--mw-font-heading,'Khand',sans-serif)}
+
+/* Small thumbnail rows (.mw-thumb-rows) - compact list, 16:9 thumb left, title beside. */
+.mw-thumb-rows{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.mw-thumb-row{display:flex;gap:12px;align-items:center;padding:8px;background:#fff;border:1px solid #e3ddd2;border-radius:0}
+.mw-thumb-row .mw-thumb{flex:0 0 96px;border:0}
+.mw-thumb-row h3{margin:0;font:600 16px/1.2 var(--mw-font-heading,'Khand',sans-serif)}
+
+/* Carousel variants (add to .mw-carousel). Numbers (.mw-num / .mw-num-big) ONLY on research topic cards.
+   --three : three cards across, swipe for more.  --peek : one big card, next peeks in.  --swipe : swipe only, hides arrows.
+   Dots: <div class="mw-dots"><span class="mw-dot" aria-current="true"></span>...</div> (update aria-current on scroll). */
+.mw-carousel--three .mw-track{grid-auto-columns:calc((100% - 24px)/3)}
+.mw-carousel--peek .mw-track{grid-auto-columns:82%}
+.mw-carousel--swipe .mw-car-nav{display:none}
+.mw-carousel .mw-thumb-card{scroll-snap-align:start}
+.mw-dots{display:flex;justify-content:center;gap:8px;margin-top:10px}
+.mw-dot{width:7px;height:7px;background:#e3ddd2;border-radius:0}
+.mw-dot[aria-current="true"]{background:#171717}
+.mw-num-big{display:block;margin:0 0 2px;font:700 30px/1 var(--mw-font-heading,'Khand',sans-serif);color:#171717;letter-spacing:.02em}
+@media(max-width:480px){.mw-carousel--three .mw-track{grid-auto-columns:calc((100% - 16px)/2.3)}.mw-thumb-cap h3{font-size:16px}}
+
+/* Swipe cards (.mw-swipe) - one item per card with actions: Legal questions (Yes / Ask More), Security checks (Done),
+   Coach notes and suggestions (Approve). Uses the .mw-track scroll-snap; one card at a time, next peeks in.
+   <div class="mw-swipe"><div class="mw-track"><article class="mw-swipe-card mw-swipe-card--red"><p class="mw-swipe-meta">Urgent</p>
+     <h3>Question</h3><div class="mw-swipe-actions"><button class="mw-btn mw-btn--primary">Yes</button><button class="mw-btn">Ask More</button></div></article></div></div> */
+.mw-swipe .mw-track{grid-auto-columns:88%}
+.mw-swipe-card{scroll-snap-align:start;display:flex;flex-direction:column;gap:8px;min-height:180px;padding:18px;background:#fff;border:1px solid #e3ddd2;border-top:3px solid var(--mw-status,#171717);border-radius:0}
+.mw-swipe-card--red{--mw-status:#B42318}.mw-swipe-card--amber{--mw-status:#B54708}.mw-swipe-card--green{--mw-status:#2D6A4F}
+.mw-swipe-meta{margin:0;font:600 13px/1.2 var(--mw-font-body,'Hind',sans-serif);letter-spacing:.06em;text-transform:uppercase;color:var(--mw-status,#737373)}
+.mw-swipe-card h3{margin:0;font:600 20px/1.25 var(--mw-font-heading,'Khand',sans-serif);color:#0a0a0a}
+.mw-swipe-actions{margin-top:auto;display:flex;gap:8px;flex-wrap:wrap}
+.mw-btn{min-height:44px;padding:0 18px;border:1px solid #171717;background:#fff;color:#171717;font:600 15px/1 var(--mw-font-body,'Hind',sans-serif);border-radius:0;cursor:pointer}
+.mw-btn--primary{background:#171717;color:#fafafa}
+
+/* Status card (.mw-status-card) - Security exposure areas: white card, drawn shield icon in the status colour (no solid tiles). */
+.mw-status-card{display:flex;gap:10px;align-items:center;padding:12px;background:#fff;border:1px solid #e3ddd2;border-radius:0;--mw-status:#2D6A4F}
+.mw-status-card--red{--mw-status:#B42318}.mw-status-card--amber{--mw-status:#B54708}
+.mw-status-card svg{flex:none;width:28px;height:32px;fill:none;stroke:var(--mw-status);stroke-width:2.2}
+.mw-status-card h3{margin:0;font:600 16px/1.2 var(--mw-font-heading,'Khand',sans-serif)}
+.mw-status-card p{margin:0;font:600 13px/1.2 var(--mw-font-body,'Hind',sans-serif);color:var(--mw-status)}
+
+/* Alert banner (.mw-alert) - Security alerts carousel at the top: light red fill, red outline, one alert per card. */
+.mw-alert{scroll-snap-align:start;padding:14px 16px;background:#FEF3F2;border:1px solid #B42318;border-radius:0}
+.mw-alert .mw-swipe-meta{color:#B42318}
+.mw-alert h3{margin:2px 0;font:600 18px/1.25 var(--mw-font-heading,'Khand',sans-serif);color:#0a0a0a}
+.mw-alert p{margin:0;font-size:14px;color:#404040}
+
+/* Standard dashboard footer (Max 14:34): the footer = Routines section (always the last section) + Share button + "Built by Max Weberman" link.
+   <footer class="mw-footer"><section class="mw-routines">...routines...</section><div class="mw-footer-bar"><button class="mw-btn">Share</button><a href="https://maxweberman.com">Built by Max Weberman</a></div></footer> */
+.mw-footer{margin-top:32px;border-top:2px solid #171717;padding-top:20px}
+.mw-footer-bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;margin-top:20px;font-size:13px;color:#737373}
+.mw-footer-bar a{color:#737373}
+/* Phones: three-across carousels show ~1.15 cards so expanded cards stay readable */
+@media(max-width:600px){.mw-carousel--three .mw-track,.mw-carousel--three{grid-auto-columns:87%}}
+
+/* ===== Section separation (Max, Oct 15 2026 14:43 ICT, v cc6, rulebook R71). Light only, square corners. =====
+   Usage: <section class="mw-section">...</section>  or  <main class="mw-sections"><section>...</section>...</main>
+   Modifiers: .mw-section--plain (spacing only, no hairline), .mw-section--band (soft full-width band).
+   Brand overrides (WellNest, UpKeep) - set on :root or the board wrapper:
+     --mw-divider     hairline colour      (default #e3ddd2)
+     --mw-band        band background      (default #FAF6EE)
+     --mw-section-gap vertical spacing     (default 56px; 40px under 600px)
+   No hairline directly after .mw-cc-header (it has its own bottom bar); .mw-footer keeps its own spacing. */
+:root{--mw-divider:#e3ddd2;--mw-band:#FAF6EE;--mw-section-gap:56px}
+@media(max-width:600px){:root{--mw-section-gap:40px}}
+.mw-section,.mw-sections>*{display:block;box-sizing:border-box;margin:0;padding:var(--mw-section-gap) 0 0;border:0;border-radius:0}
+.mw-section+.mw-section,.mw-sections>*+*{border-top:1px solid var(--mw-divider,#e3ddd2);margin-top:var(--mw-section-gap)}
+.mw-section:first-child,.mw-sections>:first-child,.mw-cc-header+.mw-section,.mw-sections>.mw-cc-header+*{border-top:0;margin-top:0;padding-top:0}
+.mw-sections>.mw-cc-header{padding:16px 0 18px;margin:0 0 24px}
+.mw-section--plain,.mw-sections>.mw-section--plain{border-top:0!important}
+.mw-section--band,.mw-sections>.mw-section--band{background:var(--mw-band,#FAF6EE);border-top:0!important;border-radius:0;padding:var(--mw-section-gap) 24px;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);padding-left:max(24px,calc(50vw - 50%));padding-right:max(24px,calc(50vw - 50%))}
+.mw-section--band+.mw-section,.mw-sections>.mw-section--band+*{border-top:0;margin-top:0}
+.mw-sections>.mw-footer,.mw-section+.mw-footer{border-top:2px solid #171717;margin-top:32px;padding-top:20px}
