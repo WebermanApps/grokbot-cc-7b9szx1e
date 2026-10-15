@@ -1,12 +1,16 @@
 {
  "agent": "grok-bot",
- "updated": "Oct 15, 2026 \u00b7 7:23 AM ICT",
+ "updated": "Oct 15, 2026 \u00b7 7:45 AM ICT",
+ "done_today": 0,
  "pinned": [
   {
+   "id": "agent-dashboards-more-yzbanp",
    "name": "Agent Dashboards More Deck",
    "url": "https://webermanapps.github.io/style-swipe/agent-dashboards-more-yzbanp/",
    "answered": 0,
-   "total": 20
+   "total": 20,
+   "tag": "Dashboards",
+   "color": "#D7A363"
   }
  ],
  "decks": [
@@ -15,28 +19,44 @@
    "name": "Questions Center Deck Two",
    "url": "https://webermanapps.github.io/style-swipe/questions-center-two-x0uz20/",
    "total": 20,
-   "topic": "Questions Center"
+   "topic": "Questions Center",
+   "tag": "Questions Center",
+   "color": "#B5523B",
+   "refill": true,
+   "added": "2026-10-14T00:06:00+07:00"
   },
   {
    "id": "follow-through-reporting-h5t6jb",
    "name": "Follow-through & Reporting Deck",
    "url": "https://webermanapps.github.io/style-swipe/follow-through-reporting-h5t6jb/",
    "total": 20,
-   "topic": "Follow-through"
+   "topic": "Follow-through",
+   "tag": "Follow-through",
+   "color": "#8A5BB5",
+   "refill": false,
+   "added": "2026-10-14T00:05:00+07:00"
   },
   {
    "id": "usage-cost-v8n4pe",
    "name": "Usage & Cost Deck",
    "url": "https://webermanapps.github.io/style-swipe/usage-cost-v8n4pe/",
    "total": 20,
-   "topic": "Usage & Cost"
+   "topic": "Usage & Cost",
+   "tag": "Usage & Cost",
+   "color": "#0B6E4F",
+   "refill": false,
+   "added": "2026-10-14T00:04:00+07:00"
   },
   {
    "id": "delegation-routing-m3x9qa",
    "name": "Delegation & Routing Deck",
    "url": "https://webermanapps.github.io/style-swipe/delegation-routing-m3x9qa/",
    "total": 20,
-   "topic": "Delegation"
+   "topic": "Delegation",
+   "tag": "Delegation",
+   "color": "#2E6FA8",
+   "refill": false,
+   "added": "2026-10-14T00:03:00+07:00"
   }
  ]
 }
