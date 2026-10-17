@@ -1,6 +1,6 @@
 {
  "agent": "grok-bot",
- "updated": "Oct 16, 2026 \u00b7 4:56 AM ICT",
+ "updated": "2026-10-17T08:05:35+07:00",
  "done_today": 0,
  "pinned": [
   {
@@ -26,6 +26,86 @@
    "added": "2026-10-14T00:06:00+07:00"
   },
   {
+   "id": "follow-through-reporting-habits-promises",
+   "name": "Follow-Through: Habits & Promises",
+   "url": "https://webermanapps.github.io/style-swipe/follow-through-reporting-habits-promises-h48g60/",
+   "total": 10,
+   "topic": "Follow-through",
+   "tag": "Follow-through",
+   "color": "#8A5BB5",
+   "added": "2026-10-17T08:05:35+07:00",
+   "answered": 0,
+   "split_from": "follow-through-reporting",
+   "blurb": "10 cards, ready now"
+  },
+  {
+   "id": "follow-through-reporting-report-format-tone",
+   "name": "Follow-Through: Report Format & Tone",
+   "url": "https://webermanapps.github.io/style-swipe/follow-through-reporting-report-format-tone-rx4peg/",
+   "total": 10,
+   "topic": "Follow-through",
+   "tag": "Follow-through",
+   "color": "#8A5BB5",
+   "added": "2026-10-17T08:05:35+07:00",
+   "answered": 0,
+   "split_from": "follow-through-reporting",
+   "blurb": "10 cards, ready now"
+  },
+  {
+   "id": "usage-cost-limits-spend",
+   "name": "Usage & Cost: Limits & Spend",
+   "url": "https://webermanapps.github.io/style-swipe/usage-cost-limits-spend-m51cmg/",
+   "total": 10,
+   "topic": "Usage & Cost",
+   "tag": "Usage & Cost",
+   "color": "#0B6E4F",
+   "added": "2026-10-17T08:05:35+07:00",
+   "answered": 0,
+   "split_from": "usage-cost",
+   "blurb": "10 cards, ready now"
+  },
+  {
+   "id": "usage-cost-work-depth-timing",
+   "name": "Usage & Cost: Work Depth & Timing",
+   "url": "https://webermanapps.github.io/style-swipe/usage-cost-work-depth-timing-bxcftu/",
+   "total": 10,
+   "topic": "Usage & Cost",
+   "tag": "Usage & Cost",
+   "color": "#0B6E4F",
+   "added": "2026-10-17T08:05:35+07:00",
+   "answered": 0,
+   "split_from": "usage-cost",
+   "blurb": "10 cards, ready now"
+  },
+  {
+   "id": "delegation-routing-who-does-what",
+   "name": "Delegation: Oversight & Check-Ins",
+   "url": "https://webermanapps.github.io/style-swipe/delegation-routing-who-does-what-ncgnfj/",
+   "total": 10,
+   "topic": "Delegation",
+   "tag": "Delegation",
+   "color": "#2E6FA8",
+   "added": "2026-10-17T08:05:35+07:00",
+   "answered": 0,
+   "split_from": "delegation-routing",
+   "blurb": "10 cards, ready now"
+  },
+  {
+   "id": "delegation-routing-oversight-check-ins",
+   "name": "Delegation: Who Does What",
+   "url": "https://webermanapps.github.io/style-swipe/delegation-routing-oversight-check-ins-3tnwfg/",
+   "total": 10,
+   "topic": "Delegation",
+   "tag": "Delegation",
+   "color": "#2E6FA8",
+   "added": "2026-10-17T08:05:35+07:00",
+   "answered": 0,
+   "split_from": "delegation-routing",
+   "blurb": "10 cards, ready now"
+  }
+ ],
+ "unlisted": [
+  {
    "id": "follow-through-reporting-h5t6jb",
    "name": "Follow-through & Reporting Deck",
    "url": "https://webermanapps.github.io/style-swipe/follow-through-reporting-h5t6jb/",
@@ -34,7 +114,13 @@
    "tag": "Follow-through",
    "color": "#8A5BB5",
    "refill": false,
-   "added": "2026-10-14T00:05:00+07:00"
+   "added": "2026-10-14T00:05:00+07:00",
+   "unlisted_at": "2026-10-17T08:05:35+07:00",
+   "split_into": [
+    "follow-through-reporting-habits-promises",
+    "follow-through-reporting-report-format-tone"
+   ],
+   "note": "R86 (Max Oct 17 2026 07:50 ICT): unanswered 20-pick deck split into two 10-pick decks; original unlisted (page, file and any votes kept)"
   },
   {
    "id": "usage-cost-v8n4pe",
@@ -45,7 +131,13 @@
    "tag": "Usage & Cost",
    "color": "#0B6E4F",
    "refill": false,
-   "added": "2026-10-14T00:04:00+07:00"
+   "added": "2026-10-14T00:04:00+07:00",
+   "unlisted_at": "2026-10-17T08:05:35+07:00",
+   "split_into": [
+    "usage-cost-limits-spend",
+    "usage-cost-work-depth-timing"
+   ],
+   "note": "R86 (Max Oct 17 2026 07:50 ICT): unanswered 20-pick deck split into two 10-pick decks; original unlisted (page, file and any votes kept)"
   },
   {
    "id": "delegation-routing-m3x9qa",
@@ -56,7 +148,17 @@
    "tag": "Delegation",
    "color": "#2E6FA8",
    "refill": false,
-   "added": "2026-10-14T00:03:00+07:00"
+   "added": "2026-10-14T00:03:00+07:00",
+   "unlisted_at": "2026-10-17T08:05:35+07:00",
+   "split_into": [
+    "delegation-routing-who-does-what",
+    "delegation-routing-oversight-check-ins"
+   ],
+   "note": "R86 (Max Oct 17 2026 07:50 ICT): unanswered 20-pick deck split into two 10-pick decks; original unlisted (page, file and any votes kept)"
   }
- ]
+ ],
+ "cap": 10,
+ "cap_note": "R86 (Max Oct 17 2026 07:50 ICT): every shelf shows up to 10 decks (pinned included), 10 picks per deck; in-progress first, done last (kit deck-shelf.js sort)",
+ "held": [],
+ "queued": []
 }
