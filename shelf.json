@@ -1,6 +1,6 @@
 {
  "agent": "grok-bot",
- "updated": "2026-10-17T08:05:35+07:00",
+ "updated": "2026-10-17T09:55:08+07:00",
  "done_today": 0,
  "pinned": [
   {
@@ -78,9 +78,9 @@
    "blurb": "10 cards, ready now"
   },
   {
-   "id": "delegation-routing-who-does-what",
+   "id": "delegation-routing-oversight-check-ins-deck",
    "name": "Delegation: Oversight & Check-Ins",
-   "url": "https://webermanapps.github.io/style-swipe/delegation-routing-who-does-what-ncgnfj/",
+   "url": "https://webermanapps.github.io/style-swipe/delegation-routing-oversight-check-ins-deck-2r1j05/",
    "total": 10,
    "topic": "Delegation",
    "tag": "Delegation",
@@ -88,12 +88,13 @@
    "added": "2026-10-17T08:05:35+07:00",
    "answered": 0,
    "split_from": "delegation-routing",
-   "blurb": "10 cards, ready now"
+   "blurb": "10 cards, ready now",
+   "renamed_from": "delegation-routing-who-does-what"
   },
   {
-   "id": "delegation-routing-oversight-check-ins",
+   "id": "delegation-routing-who-does-what-deck",
    "name": "Delegation: Who Does What",
-   "url": "https://webermanapps.github.io/style-swipe/delegation-routing-oversight-check-ins-3tnwfg/",
+   "url": "https://webermanapps.github.io/style-swipe/delegation-routing-who-does-what-deck-x645rm/",
    "total": 10,
    "topic": "Delegation",
    "tag": "Delegation",
@@ -101,7 +102,8 @@
    "added": "2026-10-17T08:05:35+07:00",
    "answered": 0,
    "split_from": "delegation-routing",
-   "blurb": "10 cards, ready now"
+   "blurb": "10 cards, ready now",
+   "renamed_from": "delegation-routing-oversight-check-ins"
   }
  ],
  "unlisted": [
@@ -151,8 +153,8 @@
    "added": "2026-10-14T00:03:00+07:00",
    "unlisted_at": "2026-10-17T08:05:35+07:00",
    "split_into": [
-    "delegation-routing-who-does-what",
-    "delegation-routing-oversight-check-ins"
+    "delegation-routing-oversight-check-ins-deck",
+    "delegation-routing-who-does-what-deck"
    ],
    "note": "R86 (Max Oct 17 2026 07:50 ICT): unanswered 20-pick deck split into two 10-pick decks; original unlisted (page, file and any votes kept)"
   }
@@ -160,5 +162,6 @@
  "cap": 10,
  "cap_note": "R86 (Max Oct 17 2026 07:50 ICT): every shelf shows up to 10 decks (pinned included), 10 picks per deck; in-progress first, done last (kit deck-shelf.js sort)",
  "held": [],
- "queued": []
+ "queued": [],
+ "done": []
 }
