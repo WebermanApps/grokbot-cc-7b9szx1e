@@ -2,8 +2,8 @@
   "agent": "Grok Bot",
   "type": "Morning Report",
   "report_type": "Morning Report",
-  "date": "Sun, Oct 18, 2026",
-  "posted_at": "2026-10-18T04:59:00+07:00",
-  "due": "2026-10-18T05:00:00+07:00",
+  "date": "Tue, Oct 20, 2026",
+  "posted_at": "2026-10-20T12:45:00+07:00",
+  "summary": "Starting clean. The next report comes from the 4 AM Deck Run.",
   "late": false
 }
